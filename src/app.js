@@ -28,13 +28,13 @@ console.log(reverseString("Hello World"))
 
 //Exercise 3
 const arr1 = [1, 2, 3]
-const arr2 = []
+const arr2 = [2,2]
 
 const swap = function(arr1, arr2) {
   //Your code here
   if(arr1.length === 0)
     return
-    arr2[arr1.length - 1] = arr1.splice(arr1.length - 1, 1 )[0]
+    arr2[arr2.length ] = arr1.splice(0, 1 )[0]
     return swap(arr1, arr2)
 
 }
